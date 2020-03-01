@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'ico-mogo';
-  src:  url('fonts/ico-mogo.eot?gwhv5e');
-  src:  url('fonts/ico-mogo.eot?gwhv5e#iefix') format('embedded-opentype'),
-    url('fonts/ico-mogo.ttf?gwhv5e') format('truetype'),
-    url('fonts/ico-mogo.woff?gwhv5e') format('woff'),
-    url('fonts/ico-mogo.svg?gwhv5e#ico-mogo') format('svg');
+  src:  url('ico-mogo.woff');
+  src:  url('ico-mogo.eot') format('embedded-opentype'),
+    url('ico-mogo.ttf') format('truetype'),
+    url('ico-mogo.woff') format('woff'),
+    url('ico-mogo.svg') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -27,77 +27,58 @@
 
 .icon-ALARMevents:before {
   content: "\e900";
-  color: #95e1d3;
 }
 .icon-BOOK_2events:before {
   content: "\e901";
-  color: #95e1d3;
 }
 .icon-COMPUTER_OKevents:before {
   content: "\e902";
-  color: #95e1d3;
 }
 .icon-dribbbleevents:before {
   content: "\e903";
-  color: #95e1d3;
 }
 .icon-facebookevents:before {
   content: "\e904";
-  color: #fff;
 }
 .icon-google_plusevents:before {
   content: "\e905";
-  color: #95e1d3;
 }
 .icon-HOMEevents:before {
   content: "\e906";
-  color: #95e1d3;
 }
 .icon-IMAGEevents:before {
   content: "\e907";
-  color: #95e1d3;
 }
 .icon-instagramevents:before {
   content: "\e908";
-  color: #f38181;
 }
 .icon-LINE_GRAPHevents:before {
   content: "\e909";
-  color: #95e1d3;
 }
 .icon-MAGNIFYING_GLASSevents:before {
   content: "\e90a";
-  color: #fff;
 }
 .icon-PICTUREevents:before {
   content: "\e90b";
-  color: #fff;
 }
 .icon-pinterestevents:before {
   content: "\e90c";
-  color: #f38181;
 }
 .icon-SHOPPING-CARTevents:before {
   content: "\e90d";
-  color: #fff;
 }
 .icon-SPEECH_BUBBLE_2events:before {
   content: "\e90e";
-  color: #95e1d3;
 }
 .icon-tumblrevents:before {
   content: "\e90f";
-  color: #95e1d3;
 }
 .icon-twitterevents:before {
   content: "\e910";
-  color: #f38181;
 }
 .icon-VIEWevents:before {
   content: "\e911";
-  color: #95e1d3;
 }
 .icon-youtubeevents:before {
   content: "\e912";
-  color: #95e1d3;
 }

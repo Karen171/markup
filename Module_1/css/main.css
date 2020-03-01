@@ -12,13 +12,38 @@ html {
     color: #999999;
 }
 
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+}
+
 img {
     vertical-align: top;
+}
+
+.icon-facebookevents {
+    font-size: 26px;
+}
+
+.icon-twitterevents {
+    font-size: 26px;
+}
+
+.icon-pinterestevents {
+    font-size: 26px;
+}
+
+.icon-instagramevents {
+    font-size: 26px;
 }
 
 h1, h2, h3, h4, h5 {
     margin: 0;
 }
+
 
 h3 {
     color: #333333;
@@ -35,6 +60,14 @@ h4 {
     font-size: 1.6rem;
     font-weight: 400;
     color: #333333;
+}
+
+h5 {
+    color: #333333;
+    font-family: 'Montserrat', serif;
+    font-size: 0.933rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 h3:after {
@@ -108,7 +141,6 @@ h3:after {
 }
 
 .nav-list > li > a {
-    text-decoration: none;
     text-transform: uppercase;
     color: #ffffff;
     transition: color 0.2s ease;
@@ -125,6 +157,15 @@ h3:after {
     text-decoration: none;
     color: #ffffff;
     margin-left: 5px;
+}
+
+.title {
+    margin: 105px 0 58px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner {
@@ -204,12 +245,12 @@ h3:after {
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 181px;
+    margin-bottom: 115px;
 }
 
 .services-title {
-    margin-top: 150px;
-    margin-bottom: 90px;
+    margin-top: 145px;
+    margin-bottom: 62px;
     text-align: center;
 }
 
@@ -222,60 +263,19 @@ h3:after {
 .services-item {
     display: flex;
     flex-direction: column;
-    margin: 0 35px;
+    margin: 0 35px 64px;
     padding: 0px 30px;
     width: calc(33.333% - 70px);
 }
 
-.services-item > b {
-    color: #333333;
-    font-family: 'Montserrat', serif;
-    font-size: 0.933rem;
-    font-weight: 400;
-    text-transform: uppercase;
+.services-item i {
+    font-size: 32px;
+    color: #95e1d3;
+    transform: translateX(-54px) translateY(37px);
 }
 
-
-.services-item:first-child::before {
-    content: url(../ico/ALARM.svg);
-    transform: translateX(-55px) translateY(47px);
-}
-
-.services-item:nth-child(2)::before {
-    content: url(../ico/LINE_GRAPH.svg);
-    transform: translateX(-55px) translateY(47px);
-}
-
-.services-item:nth-child(3)::before {
-    content: url(../ico/COMPUTER_OK.svg);
-    transform: translateX(-55px) translateY(47px);
-}
-
-/* .services-item:nth-child(2-n)::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #e5e5e5;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 130px;
-} */
-
-.services-item:nth-child(4)::before {
-    content: url(../ico/BOOK_2.svg);
-    transform: translateX(-55px) translateY(47px);
-}
-
-.services-item:nth-child(5)::before {
-    content: url(../ico/HOME.svg);
-    transform: translateX(-55px) translateY(47px);
-}
-
-.services-item:last-child::before {
-    content: url(../ico/IMAGE.svg);
-    transform: translateX(-55px) translateY(47px);
+.services-item h5 {
+    margin-bottom: 5px;
 }
 
 .services-item:nth-child(3n+1):before {
@@ -286,7 +286,11 @@ h3:after {
     left: 0;
     right: 0;
     background-color: #e5e5e5;
-    transform: translateY(-46px);
+    transform: translateY(-13px);
+}
+
+.services-item:first-child:before {
+    content: none;
 }
 
 /* panel */
@@ -365,12 +369,8 @@ h3:after {
     margin-bottom: 92px;
 }
 
-.title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 105px 0 58px;
+.team-title {
+    margin-bottom: 71px;
 }
 
 .photo-box {
@@ -411,11 +411,8 @@ h3:after {
 
 .photo-holder {
     margin-bottom: 21px;
-}
-
-
-.photo-holder {
     background: linear-gradient(to bottom, rgba(252,227,138,1) 0%,rgba(243,129,129,1) 100%);
+    position: relative;
 }
 
 .photo-holder {
@@ -436,6 +433,40 @@ h3:after {
     opacity: .1;
 }
 
+.icon-list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    position: absolute;
+    z-index: 2;
+    top: calc(50% - 28px);
+    left: 50%;
+    transform: translateX(-50%);
+    visibility: hidden;
+}
+
+.icon-list li {
+    padding: 13px 15px;
+    margin-right: 1px;
+    background-color: #fce38a;
+}
+
+.icon-list li:hover {
+    background-color: #f38181;
+}
+
+.photo-holder:hover .icon-list {
+    visibility: visible;
+}
+
+.icon-list i {
+    color: #f38181;
+}
+
+.icon-list li:hover i{
+    color: #fff;
+}
 
 /* logo-partner */
 
@@ -448,12 +479,105 @@ h3:after {
 .logo-holder {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 60px 13px;
 }
 
 .logo-item {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 90px; 
+    width: calc(33.333% - 90px);
 }
 
+.logo-item:last-child {
+    margin: 0;
+}
+
+/* gallery */
+
+
+
+.gallery {
+    display: flex;
+}
+
+.gallery-holder img {
+    display: block;
+}
+
+.gallery-holder {
+    width: 25%;
+}
+
+.gallery-item {
+    position: relative;
+}
+
+.gallery-item::before {
+    content: '';
+    background: linear-gradient(to bottom, rgba(252,227,138,0.9) 0%,rgba(243,129,129,0.9) 100%);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.gallery-item:hover::before {
+    opacity: 1;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: calc(50% - 48px);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.2 ease;
+}
+
+.gallery-item:hover .icon-text {
+    opacity: 1;
+}
+
+.icon-PICTUREevents {
+
+}
+
+.icon-text h5 {
+    color: #ffffff;
+    font-family: 'Montserrat', serif;
+    font-size: 0.933rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.icon-text p {
+    color: #ffffff;
+    font-family: "Roboto - Light Italic", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.icon-text > i {
+    color: #fff;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* bloquote */
+
+.bloquote-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
