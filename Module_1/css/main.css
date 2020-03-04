@@ -243,6 +243,7 @@ h3:after {
     width: 100%;
     min-height: 100vh;
     background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     position: relative;
 }
