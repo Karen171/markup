@@ -79,6 +79,10 @@ h3:after {
     overflow: hidden;
 }
 
+
+/* header */
+
+
 .container {
     width: 100%;
     max-width: 1200px;
@@ -118,7 +122,7 @@ h3:after {
     width: 26px;
     height: 26px;
     cursor: pointer;
-    z-index: 5;
+    z-index: 2;
     display: none;
 }
 
@@ -165,7 +169,6 @@ h3:after {
 .nav-list li a {
   transition-duration: .25s;
 }
-
 
 .main-nav {
     position: relative;
@@ -231,6 +234,10 @@ h3:after {
     align-items: center;
     justify-content: center;
 }
+
+
+/* banner  */
+
 
 .banner {
     width: 100%;
@@ -303,6 +310,10 @@ h3:after {
     color: #ffffff;
 }
 
+
+/* services */
+
+
 .services {
     display: flex;
     flex-direction: column;
@@ -313,8 +324,7 @@ h3:after {
 }
 
 .services-title {
-    margin-top: 145px;
-    margin-bottom: 62px;
+    margin: 145px 0 62px;
     text-align: center;
 }
 
@@ -357,7 +367,9 @@ h3:after {
     content: none;
 }
 
+
 /* panel */
+
 
 .panel-wrapper {
     width: 100%;
@@ -418,7 +430,9 @@ h3:after {
     right: 0px;
 }
 
+
 /* team */
+
 
 .team-container {
     display: flex;
@@ -562,6 +576,7 @@ h3:after {
     margin: 0;
 }
 
+
 /* gallery */
 
 
@@ -653,7 +668,9 @@ h3:after {
     margin-bottom: 15px;
 }
 
+
 /* bloquote */
+
 
 .bloquote-container {
     display: flex;
@@ -681,7 +698,6 @@ h3:after {
     font-size: 1.6rem;
     font-weight: 400;
     margin-bottom: 15px;
-    /* line-height: 36px; */
 }
 
 .bloquote-footer h4 {
@@ -698,10 +714,11 @@ h3:after {
     position: absolute;
     left: -75px;
     top: 18px;
-    /* transform: translateX(-50%); */
 }
 
+
 /* clients */
+
 
 .clients-banner {
     position: relative;
@@ -736,8 +753,7 @@ h3:after {
 .clients-list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 59px;
-    margin-top: 62px;
+    margin: 62px 0 59px;
 }
 
 .clients-holder {
@@ -747,12 +763,12 @@ h3:after {
     display: flex;
 }
 
-.client-img {
+.clients-img {
     margin-right: 30px;
 }
 
 
-.client-img {
+.clients-img {
     width: 180px;
     height: 110px;
     border-radius: 50%;
@@ -794,8 +810,7 @@ h3:after {
 }
 
 .title-blog {
-    margin-top: 112px;
-    margin-bottom: 92px;
+    margin: 112px 0 92px;
 }
 
 .blog-list {
@@ -895,7 +910,6 @@ h3:after {
 }
 
 .footer-container {
-    /* margin-top: 74px; */
     display: flex;
 }
 
@@ -1001,8 +1015,7 @@ h3:after {
 
 
 .footer-blogs {
-    margin-top: 75px;
-    margin-right: 39px;
+    margin: 75px 39px 0 0;
     padding: 0 20px;
     flex-shrink: 0;
     width: 33.333%;
@@ -1062,6 +1075,14 @@ h3:after {
 
 @media (max-width: 1024px) {
 
+    .banner-h2 {
+        font-size: 3.5rem;
+    }
+
+    .banner-h1 {
+        font-size: 8rem;
+    }
+
     .services-list {
         display: flex;
         flex-wrap: wrap;
@@ -1070,25 +1091,6 @@ h3:after {
 
     .services-item {
         width: calc(50% - 70px);
-    }
-
-    .blog-list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .blog-post img {
-        width: 100%;
-    }
-
-    .blog-post {
-        width: calc(70% - 32px);
-        margin: 0 50px 20px;
-        justify-content: center;
-        align-items: center;
     }
 
     .services-item:nth-child(2n+1):before {
@@ -1130,12 +1132,23 @@ h3:after {
         font-size: 1.4rem;
     }
 
-    .banner-h2 {
-        font-size: 3.5rem;
+    .blog-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
     }
 
-    .banner-h1 {
-        font-size: 8rem;
+    .blog-post img {
+        width: 100%;
+    }
+
+    .blog-post {
+        width: calc(70% - 32px);
+        margin: 0 50px 20px;
+        justify-content: center;
+        align-items: center;
     }
     
     .footer-container {
@@ -1172,7 +1185,6 @@ h3:after {
 }
 
 @media (max-width: 768px) {
-    
 
     .menu__btn {
         display: block;
@@ -1197,7 +1209,7 @@ h3:after {
         top: 0;
         right: -100%;
         z-index: 1;
-        background-color: #ff9f86;
+        background: linear-gradient(to bottom, rgba(232,129,130,0.9) 25%,rgba(240,217,138,0.9) 100%);
     }
 
     .nav-list li {
