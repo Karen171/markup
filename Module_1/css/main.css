@@ -640,7 +640,7 @@ h3:after {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    transition: opacity 0.2 ease;
+    transition: opacity 0.2s ease;
 }
 
 .gallery-item:hover .icon-text {
@@ -986,7 +986,7 @@ h3:after {
 
 .mogo-icons-list i {
     color: #95e1d3;
-    font-size: 1,06rem;
+    font-size: 1.06rem;
 }
 
 .mogo-icons-list li {
@@ -1005,7 +1005,7 @@ h3:after {
     position: absolute;
     color: #ffffff;
     font-family: 'Montserrat', serif;
-    font-size: 0,933rem;
+    font-size: 0.933rem;
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
