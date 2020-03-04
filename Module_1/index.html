@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script%7cMontserrat:400,700%7cRoboto:300i,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="fonts/style.css">
     <link rel="stylesheet" href="css/main.css">
@@ -15,7 +15,11 @@
             <div class="container">
                 <div class="inner-header">
                     <a href="#">MoGo</a>
-                    <nav class="main-nav">
+                    <nav class="main-nav burger-menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
                         <ul class="nav-list">
                             <li>
                                 <a href="#">about</a>
@@ -66,42 +70,42 @@
                     <div class="services-list">
                         <div class="services-item">
                             <i class="icon-ALARMevents icon"></i>
-                            <div class="service-text">
+                            <div class="services-text">
                                 <h5>photography</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                             </div>
                         </div>
                         <div class="services-item">
                             <i class="icon-LINE_GRAPHevents icon"></i>
-                            <div class="service-text">
+                            <div class="services-text">
                                 <h5>web design</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                             </div>
                         </div>
                         <div class="services-item">
                             <i class="icon-COMPUTER_OKevents icon"></i>
-                            <div class="service-text">
+                            <div class="services-text">
                                 <h5>creativity</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                             </div>
                         </div>
                         <div class="services-item">
                             <i class="icon-BOOK_2events icon"></i>
-                            <div class="service-text">
+                            <div class="services-text">
                                 <h5>seo</h5>
                                 <p>Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
                             </div>
                         </div>
                         <div class="services-item">
                             <i class="icon-HOMEevents icon"></i>
-                            <div class="service-text">
+                            <div class="services-text">
                                 <h5>css/html</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                             </div>
                         </div>
                         <div class="services-item">
                             <i class="icon-IMAGEevents icon"></i>
-                            <div class="service-text">
+                            <div class="services-text">
                                 <h5>digital</h5>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
                             </div>
@@ -144,99 +148,91 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     <div class="photo-box">
                         <div class="photo-item">
-                            <div class="photo-holder">
-                                <ul class="icon-list">
-                                    <li>
+                            <div class="photo-inner">
+                                <div class="photo-holder">
+                                    <img src="img/photo_1.png" alt="">
+                                </div>
+                                <div class="icon-holder">
+                                    <div class="icon-list">
                                         <a href="#">
                                             <i class="icon-facebookevents icon"></i>
                                         </a>
-                                    </li>
-                                    <li>
                                         <a href="#">
                                             <i class="icon-twitterevents icon"></i>
                                         </a>
-                                    </li>
-                                    <li>
                                         <a href="#">
                                             <i class="icon-pinterestevents icon"></i>
                                         </a>
-                                    </li>
-                                    <li>
                                         <a href="#">
                                             <i class="icon-instagramevents icon"></i>
                                         </a>
-                                        
-                                    </li>
-                                </ul>
-                                <img src="img/photo_1.png" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <h5>matthew dix</h5>
-                            <p>
-                                <i>Graphic Designer</i>
-                            </p>
+                            <div class="photo-text">
+                                <h5>matthew dix</h5>
+                                <p>
+                                    <i>Graphic Designer</i>
+                                </p>
+                            </div>
                         </div>
                         <div class="photo-item">
-                            <div class="photo-holder">
-                                <ul class="icon-list">
-                                    <li>
+                            <div class="photo-inner">
+                                <div class="photo-holder">
+                                    <img src="img/photo_2.png" alt="">
+                                </div>
+                                <div class="icon-holder">
+                                    <div class="icon-list">
                                         <a href="#">
                                             <i class="icon-facebookevents icon"></i>
                                         </a>
-                                    </li>
-                                    <li>
                                         <a href="#">
                                             <i class="icon-twitterevents icon"></i>
                                         </a>
-                                    </li>
-                                    <li>
                                         <a href="#">
                                             <i class="icon-pinterestevents icon"></i>
                                         </a>
-                                    </li>
-                                    <li>
                                         <a href="#">
                                             <i class="icon-instagramevents icon"></i>
                                         </a>
-                                        
-                                    </li>
-                                </ul>
-                                <img src="img/photo_2.png" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <h5>Christopher Campbell</h5>
-                            <p>
-                                <i>Branding/UX design</i>
-                            </p>
+                            <div class="photo-text">
+                                <h5>Christopher Campbell</h5>
+                                <p>
+                                    <i>Branding/UX design</i>
+                                </p>
+                            </div>
                         </div>
                         <div class="photo-item">
-                            <div class="photo-holder">
-                                <ul class="icon-list">
-                                    <li>
+                            <div class="photo-inner">
+                                <div class="photo-holder">
+                                    <img src="img/photo_3.png" alt="">
+                                </div>
+                                <div class="icon-holder">
+                                    <div class="icon-list">
                                         <a href="#">
                                             <i class="icon-facebookevents icon"></i>
                                         </a>
-                                    </li>
-                                    <li>
                                         <a href="#">
                                             <i class="icon-twitterevents icon"></i>
                                         </a>
-                                    </li>
-                                    <li>
                                         <a href="#">
                                             <i class="icon-pinterestevents icon"></i>
                                         </a>
-                                    </li>
-                                    <li>
                                         <a href="#">
                                             <i class="icon-instagramevents icon"></i>
                                         </a>
-                                    </li>
-                                </ul>
-                                <img src="img/photo_3.png" alt="">
+                                    </div>
+                                </div>
                             </div>
-                            <h5>Michael Fertig</h5>
-                            <p>
-                                <i>Developer</i>
-                            </p>
+                            <div class="photo-text">
+                                <h5>Michael Fertig </h5>
+                                <p>
+                                    <i>Developer</i>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -378,9 +374,7 @@
                         </div>
                         <div class="clients-list">
                             <div class="clients-holder">
-                                <div class="client-img">
-                                    <img src="img/client-1.jpg" alt="client">
-                                </div>
+                                <img class="client-img" src="img/client-1.jpg" alt="client">
                                 <div class="clients-text">
                                     <h5>Matthew Dix</h5>
                                     <p>
@@ -392,44 +386,38 @@
                                 </div>
                             </div>
                             <div class="clients-holder">
-                                <div class="client-img">
-                                    <img src="img/client-2.jpg" alt="client">
-                                </div>
+                                <img class="client-img" src="img/client-2.jpg" alt="client">
                                 <div class="clients-text">
-                                    <h5>Nick Karvounis</h5>
+                                    <h5>Matthew Dix</h5>
                                     <p>
                                         <i>Graphic Design</i>
                                     </p>
                                     <p>
-                                        Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
                                     </p>
                                 </div>
                             </div>
                             <div class="clients-holder">
-                                <div class="client-img">
-                                    <img src="img/client-3.jpg" alt="client">
-                                </div>
+                                <img class="client-img" src="img/client-3.jpg" alt="client">
                                 <div class="clients-text">
-                                    <h5>Jaelynn Castillo</h5>
+                                    <h5>Matthew Dix</h5>
                                     <p>
                                         <i>Graphic Design</i>
                                     </p>
                                     <p>
-                                        Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
                                     </p>
                                 </div>
                             </div>
                             <div class="clients-holder">
-                                <div class="client-img">
-                                    <img src="img/client-4.jpg" alt="client">
-                                </div>
+                                <img class="client-img" src="img/client-4.jpg" alt="client">
                                 <div class="clients-text">
-                                    <h5>Mike Petrucci</h5>
+                                    <h5>Matthew Dix</h5>
                                     <p>
                                         <i>Graphic Design</i>
                                     </p>
                                     <p>
-                                        Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.
                                     </p>
                                 </div>
                             </div>
@@ -604,7 +592,7 @@
                         <div class="mogo-form">
                             <form class="footer-form" action="#">
                                 <div>
-                                    <input type="email">
+                                    <input type="email" placeholder="Your Email...">
                                     <button class="mogo-btn">subscribe</button>
                                 </div>
                             </form>
